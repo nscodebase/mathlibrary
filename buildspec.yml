@@ -12,7 +12,7 @@ phases:
 reports:
   test-report:
     files:
-      - surefire-reports/*.xml
+      - target/surefire-reports/*.xml
     file-format: JunitXml
 artifacts:
   files:
