@@ -9,6 +9,11 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
+reports:
+  test-report:
+    files:
+      - surefire-reports/*.xml
+    file-format: JunitXml
 artifacts:
   files:
     - target/math-library-1.0.jar
